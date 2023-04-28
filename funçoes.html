@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+</head>
+<body>
+    <script>
+        function Cubo() {
+            //window.alert("teste")
+            var var1 = document.getElementById("val_x");
+            //window.alert(var1.value + " " + var2.value)
+            document.getElementById("res_cubo").innerText = var1.value * var1.value * var1.value;
+        }
+    </script>
+    <input id="val_x" value="1">
+    <button onclick="Cubo()">Cubo de um número</button>
+    <p id="res_cubo">XXXX</p>
+
+
+    <script>
+        function Fahrenheit() {
+            //window.alert("teste")
+            var F = document.getElementById("val_1");
+            //window.alert(var1.value + " " + var2.value)
+            document.getElementById("res_fah").innerHTML = (F.value - 32) * 5/9;
+        }
+    </script>
+    <input id="val_1" value="1">
+    <button onclick="Fahrenheit()">Fahrenheit para Celsius</button>
+    <p id="res_fah">XXXX</p>
+
+
+
+
+    <script>
+        function AreaTriangulo() {
+            //window.alert("teste")
+            var base = document.getElementById("val_2");
+            var altura = document.getElementById("val_3");
+            //window.alert(var1.value + " " + var2.value)
+            document.getElementById("res_tri").innerText  = base.value * altura.value / 2;
+        }
+    </script>
+    <input id="val_2" value="2">
+    <input id="val_3" value="3">
+    
+    <button onclick="AreaTriangulo()">Área do Triângulo</button>
+    <p id="res_tri">XXXX</p>
+
+    <script>
+        function AreCir(){
+            //window.alert("teste")
+            var raio = document.getElementById("val_4");
+            //window.alert(var1.value + " " + var2.value)
+            document.getElementById("res_PerCir").innerText  = raio.value * 3.14159265359 * 2;
+            document.getElementById("res_AreCir").innerText  = raio.value * raio.value * 3.14159265359;
+        }
+    </script>
+    <input id="val_4" value="4">
+    
+    
+    
+    <button onclick="AreCir()">Perímetro e Área do Círculo</button>
+    <p id="res_PerCir">XXXX</p>
+    <p id="res_AreCir">XXXX</p>
+
+    <script>
+        function Desconto() {
+            //window.alert("teste")
+            var descon = document.getElementById("val_5");
+    
+            //window.alert(var1.value + " " + var2.value)
+            document.getElementById("res_des").innerText  = descon.value * 0.05;
+        }
+    </script>
+    <input id="val_5" value="5">
+
+    
+    <button onclick="Desconto()">5% de Desconto</button>
+    <p id="res_des">XXXX</p>
+
+</body>
+</html>
